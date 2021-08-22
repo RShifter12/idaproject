@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="container">
+    <header></header>
+    <main>
+      <section class="products">
+        <h1>Добавление товара</h1>
+        <div class="products__sorting">
+          <select name="sorting" id="sorting">
+            <option value="default" selected>По умолчанию</option>
+            <option value="priceup">По возрастанию</option>
+            <option value="pricedown">По убыванию</option>
+            <option value="pop">По популярности</option>
+          </select>
+        </div>
+        <div class="products__wrapper">
+          <aside class="products__form">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label for="product__name">Наименование товара <span></span></label>
+              <input type="text" id="product__name" name="product__name" placeholder="Введите наименование товара" title="Разрешено использовать только пробелы и латинские буквы, не менее 6" pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" required>
+              <label for="product__desc">Описание товара</label>
+              <textarea type="text" id="product__desc" name="product__desc" placeholder="Введите описание товара"></textarea>
+              <label for="product__image-link">Ссылка на изображение товара <span></span></label>
+              <input type="url" id="product__image-link" name="product__image-link" placeholder="Введите ссылку" required>
+              <label for="product__price">Цена товара <span></span></label>
+              <input type="text" id="product__price" name="product__price" title="Введите ссылку на изображение" placeholder="Введите цену" pattern="^[0-9]+$" required>
+              <button class="btn" type="submit">Добавить товар</button>
+            </form>
+          </aside>
+          <div class="products__grid">
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+            <div class="products__item">
+              <a href="#">
+                <div class="products__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/grid-image.webp 1x, img/grid-image@2x.webp 2x">
+                    <img src="img/grid-image.jpg" srcset="img/grid-image@2x.jpg 2x" width="332" height="200" alt="Товар">
+                  </picture>
+                </div>
+                <div class="slider__desc">
+                  <h3>Наименование товара</h3>
+                  <p>Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                  <span>10 000 руб.</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+</html>
