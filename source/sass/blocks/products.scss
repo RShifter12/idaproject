@@ -298,7 +298,9 @@
 
 .products__desc {
   max-width: 300px;
-  margin: 16px auto 24px auto;
+  margin: 16px 0 24px 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .products__item h2 {
